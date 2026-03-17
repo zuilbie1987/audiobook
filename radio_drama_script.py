@@ -12,11 +12,11 @@
 - 郭啸天(Guo Xiaotian)→ zh-CN-YunjianNeural      (豪迈男声，侠气十足)
 - 杨铁心(Yang Tiexin) → zh-CN-YunjianNeural      (刚毅男声，忠直)
 - 张十五(Zhang Shiwu) → zh-CN-YunxiaNeural       (说书人，滑稽风趣，用女声模拟戏曲腔)  
-- 曲三(Qu San)        → zh-CN-XiaobeiNeural        (神秘低沉男声)
+- 曲三(Qu San)        → zh-CN-YunxiNeural        (神秘低沉男声)
 - 包惜弱(Bao Xiruo)   → zh-CN-XiaoxiaoNeural     (温柔女声)
 - 李氏(Li Shi)        → zh-CN-XiaoyiNeural       (活泼女声)
-- 完颜洪烈(Wanyan Honglie)→ zh-CN-XiaobeiNeural   (威严男声)
-- 侍卫/其他(Others)   → zh-CN-XiaobeiNeural       (粗犷男声)
+- 完颜洪烈(Wanyan Honglie)→ zh-CN-YunjianNeural   (威严男声)
+- 侍卫/其他(Others)   → zh-CN-YunxiNeural       (粗犷男声)
 """
 
 import asyncio
@@ -34,12 +34,12 @@ VOICES = {
     "郭啸天": "zh-CN-YunjianNeural",
     "杨铁心": "zh-CN-YunjianNeural",
     "张十五": "zh-CN-XiaoyiNeural",    # 说书人用活泼语调
-    "曲三":   "zh-CN-YunyeNeural",
+    "曲三":   "zh-CN-YunxiNeural",
     "包惜弱": "zh-CN-XiaoxiaoNeural",
-    "李氏":   "zh-CN-XiaoxiaoNeural",
-    "完颜洪烈": "zh-CN-YunzeNeural",
-    "侍卫":   "zh-CN-YunyeNeural",
-    "其他":   "zh-CN-YunyeNeural",
+    "李氏":   "zh-CN-XiaoyiNeural",
+    "完颜洪烈": "zh-CN-YunjianNeural",
+    "侍卫":   "zh-CN-YunxiNeural",
+    "其他":   "zh-CN-YunxiNeural",
 }
 
 # 语速和音调调整（SSML rate/pitch）
