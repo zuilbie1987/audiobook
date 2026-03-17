@@ -12,11 +12,11 @@
 - 郭啸天(Guo Xiaotian)→ zh-CN-YunjianNeural      (豪迈男声，侠气十足)
 - 杨铁心(Yang Tiexin) → zh-CN-YunjianNeural      (刚毅男声，忠直)
 - 张十五(Zhang Shiwu) → zh-CN-YunxiaNeural       (说书人，滑稽风趣，用女声模拟戏曲腔)  
-- 曲三(Qu San)        → zh-CN-YunfanNeural        (神秘低沉男声)
+- 曲三(Qu San)        → zh-CN-XiaobeiNeural        (神秘低沉男声)
 - 包惜弱(Bao Xiruo)   → zh-CN-XiaoxiaoNeural     (温柔女声)
 - 李氏(Li Shi)        → zh-CN-XiaoyiNeural       (活泼女声)
-- 完颜洪烈(Wanyan Honglie)→ zh-CN-YunhaoNeural   (威严男声)
-- 侍卫/其他(Others)   → zh-CN-YunjieNeural       (粗犷男声)
+- 完颜洪烈(Wanyan Honglie)→ zh-CN-XiaobeiNeural   (威严男声)
+- 侍卫/其他(Others)   → zh-CN-XiaobeiNeural       (粗犷男声)
 """
 
 import asyncio
