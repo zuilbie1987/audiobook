@@ -291,11 +291,28 @@ async def generate_all():
     
     # 并发生成（注意edge-tts有速率限制，建议分批）
     # 这里改为顺序执行避免限流
+    import os
     audio_files = []
     for i, (role, text) in enumerate(SCRIPT):
-        f = await generate_segment(i, role, text)
-        audio_files.append(f)
-    
+        # 1. 构造文件名（确保这里和 generate_segment 里的命名规则一致）
+        output_file = f"{OUTPUT_DIR}/{i:04d}_{role}.mp3"
+        
+        # 2. 检查文件是否已经存在
+        if os.path.exists(output_file):
+            print(f"  [{i:04d}] 文件已存在，跳过...")
+            audio_files.append(output_file)
+            continue
+            
+        # 3. 如果文件不存在，才调用生成函数
+        try:
+            f = await generate_segment(i, role, text)
+            if f:
+                audio_files.append(f)
+            # 稍微停顿一下，防止请求过快
+            await asyncio.sleep(0.5) 
+        except Exception as e:
+            print(f"  [{i:04d}] 生成失败: {e}")
+            
     return audio_files
 
 
